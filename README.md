@@ -1,5 +1,5 @@
 # Java_Project
-##In this Java Project module the concepts covers are: 
+In this Java Project module the concepts covers are: 
 1. Variables
 2. Datatypes
 3. Operators
