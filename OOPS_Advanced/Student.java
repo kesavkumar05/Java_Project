@@ -1,23 +1,47 @@
 package OOPS_Advanced;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class Student
-{
-    public String name;
+public class Student {
+ private String name;
+ private String id;
+ private int age;
+ private List<Course> courseList = new ArrayList<>();
 
-    public String id;
+ public Student(String name, String id, int age) {
+     this.name = name;
+     this.id = id;
+     this.age = age;
+ }
 
-    public int age;
+ // Getters and setters for encapsulation
 
-    public final List<Course> courseList = new ArrayList<>();
+ public String getName() {
+     return name;
+ }
 
-    public Student( String name, String id, int age)
-    {
-        this.name = name;
-        this.id = id;
-        this.age = age;
-    }
+ public void setName(String name) {
+     this.name = name;
+ }
+
+ public String getId() {
+     return id;
+ }
+
+ public void setId(String id) {
+     this.id = id;
+ }
+
+ public int getAge() {
+     return age;
+ }
+
+ public void setAge(int age) {
+     this.age = age;
+ }
+
+ public List<Course> getCourseList() {
+     return courseList;
+ }
 }

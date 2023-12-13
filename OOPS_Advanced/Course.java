@@ -1,35 +1,37 @@
 package OOPS_Advanced;
 
-public class Course
-{
-    public String name;
-    
-    public String id;
+public class Course {
+	 private String name;
+	 private int credits;
+	 private String professorName;
 
-    public int credits;
+	 public Course(String name, int credits, String professorName) {
+	     this.name = name;
+	     this.credits = credits;
+	     this.professorName = professorName;
+	 }
 
-    public String professorName;
+	 public String getName() {
+	     return name;
+	 }
 
-    public Course( String name, int credits, String professorName )
-    {
-        this.name = name;
-        this.id = id;
-        this.credits = credits;
-        this.professorName = professorName;
-    }
+	 public void setName(String name) {
+	     this.name = name;
+	 }
 
-	public String getCourseId() {
-		// TODO Auto-generated method stub
-		return id;
+	 public int getCredits() {
+	     return credits;
+	 }
+
+	 public void setCredits(int credits) {
+	     this.credits = credits;
+	 }
+
+	 public String getProfessorName() {
+	     return professorName;
+	 }
+
+	 public void setProfessorName(String professorName) {
+	     this.professorName = professorName;
+	 }
 	}
-
-	public String getProfessorName() {
-		// TODO Auto-generated method stub
-		return professorName;
-	}
-
-	public String getCourseName() {
-		// TODO Auto-generated method stub
-		return name;
-	}
-}

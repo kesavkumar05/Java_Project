@@ -1,12 +1,13 @@
 package OOPS_Advanced;
 
-public class CourseNotFoundException extends Exception
-{
+public class CourseNotFoundException extends Exception {
 
-    public CourseNotFoundException(String string)
-    {
-        super("course not found!!");
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CourseNotFoundException() {
+        super("Course not found!!");
     }
-
-	
 }
